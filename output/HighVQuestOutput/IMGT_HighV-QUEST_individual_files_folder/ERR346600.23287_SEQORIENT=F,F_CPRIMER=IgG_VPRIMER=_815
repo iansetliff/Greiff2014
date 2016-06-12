@@ -1,0 +1,449 @@
+IMGT/HighV-QUEST version: 1.1.1
+IMGT/V-QUEST program version: 3.3.6; IMGT/V-QUEST reference directory release: 201613-2
+Species:	human, mouse, trout, cod, catfish, teleostei, chondrichthyes, Mas-night-monkey, sheep, rat, bovine, rabbit, dog, zebrafish, camel, nonhuman-primates, Rhesus-monkey, pig,platypus,alpaca	
+Receptor type or locus:	null	
+IMGT directory reference set:	1	
+Search for insertions and deletions:	yes	
+Nb of nucleotides to add (or exclude) in 3' of the V-REGION for the evaluation of the alignment score: 	null	
+Nb of nucleotides to exclude in 5' of the V-REGION for the evaluation of the nb of mutations: 	null	
+
+
+A. Detailed results for the IMGT/V-QUEST analysed sequences
+
+1 sequences have been analysed in the current run:
+
+
+------------------------------
+
+
+Sequence number 1 : ERR346600.23287_SEQORIENT=F,F_CPRIM...
+compared with the mouse IG set from the IMGT reference directory
+
+>ERR346600.23287_SEQORIENT=F,F_CPRIM...
+nnnnnnnnnnnnnnnnnnnntggagctgagctggtaaggcctgggacttcagtgaagata
+tcctgcaaggcttctggctacaccttcactaactactggctaggttggttaaagcagagg
+cctggacatggacttgagtggattggagatatttaccctggaggtgtttattctaactgc
+aatgagaagttcaagggcaaggccacactgactgcagacacatcctccagctctgcctac
+atgcagctcagtagcctgacatctgaggactctgctgtctatttctgtgcaacttggggt
+ccgtactactttgcctactggggccaaggcaccactctcacagtctcctcagccaaaaca
+acac
+
+
+Result summary: ;
+ Productive IGH rearranged sequence (no stop codon and in-frame junction);
+V-GENE and allele;Musmus IGHV1-63*02 F; score = 1200; identity = 87.85% (253/288 nt);
+J-GENE and allele;Musmus IGHJ2*01 F; score = 231; identity = 97.92% (47/48 nt);
+D-GENE and allele by IMGT/JunctionAnalysis;Musmus IGHD2-14*01 F;D-REGION is in  reading frame 1;
+FR-IMGT lengths, CDR-IMGT lengths and AA JUNCTION;[25.17.38.11];[8.8.10];CATWGPYYFAYW;
+
+
+
+Closest V-REGIONs (evaluated from the V-REGION first nucleotide to  the 2nd-CYS codon)
+                                    Score       Identity
+D14633 Musmus IGHV1-63*02 F         1200        87.85% (253/288 nt)
+AC073939 Musmus IGHV1-63*01 F       1182        87.15% (251/288 nt)
+X02460 Musmus IGHV1S28*01 P         1137        85.42% (246/288 nt)
+AC074329 Musmus IGHV1-54*01 F       1092        83.68% (241/288 nt)
+J00513 Musmus IGHV1S11*01 P         1092        83.68% (241/288 nt)
+
+
+1. Alignment for V-GENE
+                                    <---------------------------------- FR1-IMGT ---------------
+ERR346600.23287_SEQORIENT=F,F_CPRIM nnnnnnnnnnnnnnnnnnnntggagct...gagctggtaaggcctgggacttcagtgaag
+D14633 Musmus IGHV1-63*02 F         caggtccagctgcagcagtc-------...------------------------------
+AC073939 Musmus IGHV1-63*01 F       caggtccagctgcagcagtc-------...------------------------------
+X02460 Musmus IGHV1S28*01 P         caggtccagctgcagcagtc-------...------------------------------
+AC074329 Musmus IGHV1-54*01 F       caggtccagctgcagcagtc-------...------------------------------
+J00513 Musmus IGHV1S11*01 P         caggtccagctgcagcagtc-------...-----------------a------------
+
+                                    ----------------->______________ CDR1-IMGT ___________<-----
+ERR346600.23287_SEQORIENT=F,F_CPRIM atatcctgcaaggcttctggctacaccttc............actaactactggctaggt
+D14633 Musmus IGHV1-63*02 F         --g------------g----a---------............------------a-----
+AC073939 Musmus IGHV1-63*01 F       --g-----------------a---------............------------a-----
+X02460 Musmus IGHV1S28*01 P         -ag----------t------a---------............g-----------a-----
+AC074329 Musmus IGHV1-54*01 F       g-g-----------------a---g-----............-----t----t-a---ag
+J00513 Musmus IGHV1S11*01 P         -ag-----------------a---------............g-----------a-----
+
+                                    --------------- FR2-IMGT ------------------->___________ CDR
+ERR346600.23287_SEQORIENT=F,F_CPRIM tggttaaagcagaggcctggacatggacttgagtggattggagatatttaccctgga...
+D14633 Musmus IGHV1-63*02 F         ---g----------------------c------------------------------...
+AC073939 Musmus IGHV1-63*01 F       ---gc---------------------c------------------------------...
+X02460 Musmus IGHV1S28*01 P         ---g----------------------c------------------------------...
+AC074329 Musmus IGHV1-54*01 F       ---g-------------------g--c----------------tg---a-t------...
+J00513 Musmus IGHV1S11*01 P         ---g----------------------c------------------------------...
+
+                                    2-IMGT ________<--------------------------------------------
+ERR346600.23287_SEQORIENT=F,F_CPRIM ...ggtgtttattctaactgcaatgagaagttcaag...ggcaaggccacactgactgca
+D14633 Musmus IGHV1-63*02 F         ...----g----a------a----------------...---------------------
+AC073939 Musmus IGHV1-63*01 F       ...----g----a------a----------------...---------------------
+X02460 Musmus IGHV1S28*01 P         ...-ac-g-gt-a------a----------------...---------------------
+AC074329 Musmus IGHV1-54*01 F       ...a---g-gg-a------a----------------...--------a------------
+J00513 Musmus IGHV1S11*01 P         ...-ac-g-gt-a------a----------------...-c-------------------
+
+                                    --------- FR3-IMGT -----------------------------------------
+ERR346600.23287_SEQORIENT=F,F_CPRIM gacacatcctccagctctgcctacatgcagctcagtagcctgacatctgaggactctgct
+D14633 Musmus IGHV1-63*02 F         ---------------a-a-----------------c-----------------------c
+AC073939 Musmus IGHV1-63*01 F       ----a----------a-a------------t----c-----------------------c
+X02460 Musmus IGHV1S28*01 P         ----a----------a-a---------t-------c-----------------------g
+AC074329 Musmus IGHV1-54*01 F       ----a----------a-------------------c-----------------------g
+J00513 Musmus IGHV1S11*01 P         ----a----------a-a-----t---g----t-----at-------------------a
+
+                                    ----------->___________ CDR3-IMGT ________
+ERR346600.23287_SEQORIENT=F,F_CPRIM gtctatttctgtgcaacttggggtccgtactactttgcctactggggccaaggcaccact
+D14633 Musmus IGHV1-63*02 F         a------a--------ga
+AC073939 Musmus IGHV1-63*01 F       a------a--------ga
+X02460 Musmus IGHV1S28*01 P         -------a----t-g-ga
+AC074329 Musmus IGHV1-54*01 F       ----------------ga
+J00513 Musmus IGHV1S11*01 P         -----a-a--------ga
+
+                                    
+ERR346600.23287_SEQORIENT=F,F_CPRIM ctcacagtctcctcagccaaaacaacac
+D14633 Musmus IGHV1-63*02 F         
+AC073939 Musmus IGHV1-63*01 F       
+X02460 Musmus IGHV1S28*01 P         
+AC074329 Musmus IGHV1-54*01 F       
+J00513 Musmus IGHV1S11*01 P         
+
+
+3. Alignment for J-GENE
+
+                                    Score       Identity
+V00770 Musmus IGHJ2*01 F            231         97.92% (47/48 nt)
+S73821 Musmus IGHJ2*02 F            222         95.83% (46/48 nt)
+S77041 Musmus IGHJ2*03 F            212         95.65% (44/46 nt)
+V00770 Musmus IGHJ3*01 F            123         72.92% (35/48 nt)
+V00770 Musmus IGHJ4*01 F            117         68.52% (37/54 nt)
+
+ERR346600.23287 SEQORIENT=F,F CPRIM cttggggtccgtactactttgcctactggggccaaggcaccactctcacagtctcctcag
+V00770 Musmus IGHJ2*01 F            ............---------a--------------------------------------
+S73821 Musmus IGHJ2*02 F            ............---------a-------------------t------------------
+S77041 Musmus IGHJ2*03 F            ..............-------a--------------------g-----------------
+V00770 Musmus IGHJ3*01 F            ............c--gg-----t--------------g--tctgg----t-----tg---
+V00770 Musmus IGHJ4*01 F            ......a-tac--tgcta-g-a---------t-----a---t-ag----c----------
+
+ERR346600.23287 SEQORIENT=F,F CPRIM ccaaaacaacac
+V00770 Musmus IGHJ2*01 F            
+S73821 Musmus IGHJ2*02 F            
+S77041 Musmus IGHJ2*03 F            
+V00770 Musmus IGHJ3*01 F            
+V00770 Musmus IGHJ4*01 F            
+
+
+
+4. Results of IMGT/JunctionAnalysis
+
+Maximum number of accepted mutations in 3'V-REGION = 2, D-REGION = 4, 5'J-REGION = 2
+Maximum number of accepted D-GENE = 1
+
+Analysis of the JUNCTION
+
+Input                                 V name              3'V-REGION   N1        D-REGION       P 
+ERR346600.23287_SEQORIENT=F,F_CPRIM   Musmus_IGHV1-63*02  tgtgcaa..   cttgg  .........ggtccg..  t 
+
+
+Input                                         5'J-REGION           J name              D name  Vmu
+ERR346600.23287_SEQORIENT=F,F_CPRIM    actactttgcctactgg  Musmus_IGHJ2*01  Musmus_IGHD2-14*01   0 
+
+
+Input                                 t  Dmut  Jmut  Ngc
+ERR346600.23287_SEQORIENT=F,F_CPRIM       1     1    3/5
+
+
+D-REGION is in  reading frame 1. 
+
+Translation of the JUNCTION
+
+                                    104 105 106 107 108 109 113 114 115 116 117 118 frame CR3-IMGT
+                                     C   A   T   W   G   P   Y   Y   F   A   Y   W         length 
+ERR346600.23287_SEQORIENT=F,F_CPRIM tgt gca act tgg ggt ccg tac tac ttt gcc tac tgg   +     10    
+
+
+                                     Molecular   pI
+                                        mass   
+ERR346600.23287_SEQORIENT=F,F_CPRIM  1,527.72   5.48
+
+
+Be aware that some allele reference sequences may be incomplete  or from cDNAs.
+ In those cases, IMGT/JunctionAnalysis uses automatically  the allele *01 for the analysis of the JUNCTION.
+
+5. Sequence of the of the JUNCTION ('nt' and 'AA')
+
+
+104 105 106 107 108 109 113 114 115 116 117 118 
+ C   A   T   W   G   P   Y   Y   F   A   Y   W  
+tgt gca act tgg ggt ccg tac tac ttt gcc tac tgg
+
+
+Input for IMGT/JunctionAnalysis
+
+>ERR346600.23287_SEQORIENT=F,F_CPRIM,Musmus_IGHV1-63*02,Musmus_IGHJ2*01
+tgtgcaacttggggtccgtactactttgcctactgg
+
+
+
+6.V-REGION alignment with FR-IMGT and CDR-IMGT delimitations per codon
+                                    <---------------------------------------------  FR1 - IMGT  
+                                    1               5                   10                  15  
+ERR346600.23287_SEQORIENT=F,F_CPRIM nnn nnn nnn nnn nnn nnn nnt gga gct ... gag ctg gta agg cct 
+D14633 Musmus IGHV1-63*02 F         cag gtc cag ctg cag cag tc- --- --- ... --- --- --- --- --- 
+AC073939 Musmus IGHV1-63*01 F       cag gtc cag ctg cag cag tc- --- --- ... --- --- --- --- --- 
+X02460 Musmus IGHV1S28*01 P         cag gtc cag ctg cag cag tc- --- --- ... --- --- --- --- --- 
+AC074329 Musmus IGHV1-54*01 F       cag gtc cag ctg cag cag tc- --- --- ... --- --- --- --- --- 
+J00513 Musmus IGHV1S11*01 P         cag gtc cag ctg cag cag tc- --- --- ... --- --- --- --- --- 
+
+                                    ------------------------------------------> ________________
+                                                    20                  25                  30  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ggg act tca gtg aag ata tcc tgc aag gct tct ggc tac acc ttc 
+D14633 Musmus IGHV1-63*02 F         --- --- --- --- --- --g --- --- --- --- g-- --a --- --- --- 
+AC073939 Musmus IGHV1-63*01 F       --- --- --- --- --- --g --- --- --- --- --- --a --- --- --- 
+X02460 Musmus IGHV1S28*01 P         --- --- --- --- --- -ag --- --- --- -t- --- --a --- --- --- 
+AC074329 Musmus IGHV1-54*01 F       --- --- --- --- --- g-g --- --- --- --- --- --a --- g-- --- 
+J00513 Musmus IGHV1S11*01 P         --a --- --- --- --- -ag --- --- --- --- --- --a --- --- --- 
+
+                                    __  CDR1 - IMGT  ______________ <-------------------------- 
+                                                    35                  40                  45  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ... ... ... ... act aac tac tgg cta ggt tgg tta aag cag agg 
+D14633 Musmus IGHV1-63*02 F         ... ... ... ... --- --- --- --- a-- --- --- g-- --- --- --- 
+AC073939 Musmus IGHV1-63*01 F       ... ... ... ... --- --- --- --- a-- --- --- gc- --- --- --- 
+X02460 Musmus IGHV1S28*01 P         ... ... ... ... g-- --- --- --- a-- --- --- g-- --- --- --- 
+AC074329 Musmus IGHV1-54*01 F       ... ... ... ... --- --t --- -t- a-- -ag --- g-- --- --- --- 
+J00513 Musmus IGHV1S11*01 P         ... ... ... ... g-- --- --- --- a-- --- --- g-- --- --- --- 
+
+                                     FR2 - IMGT  -------------------------> ______________  CDR2
+                                                    50                  55                  60  
+ERR346600.23287_SEQORIENT=F,F_CPRIM cct gga cat gga ctt gag tgg att gga gat att tac cct gga ... 
+D14633 Musmus IGHV1-63*02 F         --- --- --- --c --- --- --- --- --- --- --- --- --- --- ... 
+AC073939 Musmus IGHV1-63*01 F       --- --- --- --c --- --- --- --- --- --- --- --- --- --- ... 
+X02460 Musmus IGHV1S28*01 P         --- --- --- --c --- --- --- --- --- --- --- --- --- --- ... 
+AC074329 Musmus IGHV1-54*01 F       --- --- --g --c --- --- --- --- --- -tg --- a-t --- --- ... 
+J00513 Musmus IGHV1S11*01 P         --- --- --- --c --- --- --- --- --- --- --- --- --- --- ... 
+
+                                     - IMGT  __________ <---------------------------------------
+                                                    65                  70                  75  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ... ggt gtt tat tct aac tgc aat gag aag ttc aag ... ggc aag 
+D14633 Musmus IGHV1-63*02 F         ... --- -g- --- a-- --- -a- --- --- --- --- --- ... --- --- 
+AC073939 Musmus IGHV1-63*01 F       ... --- -g- --- a-- --- -a- --- --- --- --- --- ... --- --- 
+X02460 Musmus IGHV1S28*01 P         ... -ac -g- gt- a-- --- -a- --- --- --- --- --- ... --- --- 
+AC074329 Musmus IGHV1-54*01 F       ... a-- -g- gg- a-- --- -a- --- --- --- --- --- ... --- --- 
+J00513 Musmus IGHV1S11*01 P         ... -ac -g- gt- a-- --- -a- --- --- --- --- --- ... -c- --- 
+
+                                    -------------------------------  FR3 - IMGT  ---------------
+                                                    80                  85                  90  
+ERR346600.23287_SEQORIENT=F,F_CPRIM gcc aca ctg act gca gac aca tcc tcc agc tct gcc tac atg cag 
+D14633 Musmus IGHV1-63*02 F         --- --- --- --- --- --- --- --- --- --- a-a --- --- --- --- 
+AC073939 Musmus IGHV1-63*01 F       --- --- --- --- --- --- -a- --- --- --- a-a --- --- --- --- 
+X02460 Musmus IGHV1S28*01 P         --- --- --- --- --- --- -a- --- --- --- a-a --- --- --- t-- 
+AC074329 Musmus IGHV1-54*01 F       --a --- --- --- --- --- -a- --- --- --- a-- --- --- --- --- 
+J00513 Musmus IGHV1S11*01 P         --- --- --- --- --- --- -a- --- --- --- a-a --- --t --- g-- 
+
+                                    ------------------------------------------------------> ____
+                                                    95                  100             104 
+ERR346600.23287_SEQORIENT=F,F_CPRIM ctc agt agc ctg aca tct gag gac tct gct gtc tat ttc tgt gca 
+D14633 Musmus IGHV1-63*02 F         --- --c --- --- --- --- --- --- --- --c a-- --- -a- --- --- 
+AC073939 Musmus IGHV1-63*01 F       t-- --c --- --- --- --- --- --- --- --c a-- --- -a- --- --- 
+X02460 Musmus IGHV1S28*01 P         --- --c --- --- --- --- --- --- --- --g --- --- -a- --- t-g 
+AC074329 Musmus IGHV1-54*01 F       --- --c --- --- --- --- --- --- --- --g --- --- --- --- --- 
+J00513 Musmus IGHV1S11*01 P         --t --- --a t-- --- --- --- --- --- --a --- --a -a- --- --- 
+
+                                    __________  CDR3 - IMGT  __________
+                                    
+ERR346600.23287_SEQORIENT=F,F_CPRIM act tgg ggt ccg tac tac ttt gcc tac tgg ggc caa ggc acc act 
+D14633 Musmus IGHV1-63*02 F         -ga
+AC073939 Musmus IGHV1-63*01 F       -ga
+X02460 Musmus IGHV1S28*01 P         -ga
+AC074329 Musmus IGHV1-54*01 F       -ga
+J00513 Musmus IGHV1S11*01 P         -ga
+
+                                    
+                                    
+ERR346600.23287_SEQORIENT=F,F_CPRIM ctc aca gtc tcc tca gcc aaa aca aca c
+D14633 Musmus IGHV1-63*02 F         
+AC073939 Musmus IGHV1-63*01 F       
+X02460 Musmus IGHV1S28*01 P         
+AC074329 Musmus IGHV1-54*01 F       
+J00513 Musmus IGHV1S11*01 P         
+
+
+7. V-REGION translation
+                                    <---------------------------------------------  FR1 - IMGT  
+                                    1               5                   10                  15  
+                                     X   X   X   X   X   X   X   G   A       E   L   V   R   P  
+ERR346600.23287_SEQORIENT=F,F_CPRIM nnn nnn nnn nnn nnn nnn nnt gga gct ... gag ctg gta agg cct 
+                                     Q   V   Q   L   Q   Q   S                                  
+D14633 Musmus IGHV1-63*02 F         cag gtc cag ctg cag cag tc- --- --- ... --- --- --- --- --- 
+
+                                    ------------------------------------------> ________________
+                                                    20                  25                  30  
+                                     G   T   S   V   K   I   S   C   K   A   S   G   Y   T   F  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ggg act tca gtg aag ata tcc tgc aag gct tct ggc tac acc ttc 
+                                                         M                   A                  
+D14633 Musmus IGHV1-63*02 F         --- --- --- --- --- --g --- --- --- --- g-- --a --- --- --- 
+
+                                    __  CDR1 - IMGT  ______________ <-------------------------- 
+                                                    35                  40                  45  
+                                                     T   N   Y   W   L   G   W   L   K   Q   R  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ... ... ... ... act aac tac tgg cta ggt tgg tta aag cag agg 
+                                                                     I           V              
+D14633 Musmus IGHV1-63*02 F         ... ... ... ... --- --- --- --- a-- --- --- g-- --- --- --- 
+
+                                     FR2 - IMGT  -------------------------> ______________  CDR2
+                                                    50                  55                  60  
+                                     P   G   H   G   L   E   W   I   G   D   I   Y   P   G      
+ERR346600.23287_SEQORIENT=F,F_CPRIM cct gga cat gga ctt gag tgg att gga gat att tac cct gga ... 
+                                                                                                
+D14633 Musmus IGHV1-63*02 F         --- --- --- --c --- --- --- --- --- --- --- --- --- --- ... 
+
+                                     - IMGT  __________ <---------------------------------------
+                                                    65                  70                  75  
+                                         G   V   Y   S   N   C   N   E   K   F   K       G   K  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ... ggt gtt tat tct aac tgc aat gag aag ttc aag ... ggc aag 
+                                             G       T       Y                                  
+D14633 Musmus IGHV1-63*02 F         ... --- -g- --- a-- --- -a- --- --- --- --- --- ... --- --- 
+
+                                    -------------------------------  FR3 - IMGT  ---------------
+                                                    80                  85                  90  
+                                     A   T   L   T   A   D   T   S   S   S   S   A   Y   M   Q  
+ERR346600.23287_SEQORIENT=F,F_CPRIM gcc aca ctg act gca gac aca tcc tcc agc tct gcc tac atg cag 
+                                                                             T                  
+D14633 Musmus IGHV1-63*02 F         --- --- --- --- --- --- --- --- --- --- a-a --- --- --- --- 
+
+                                    ------------------------------------------------------> ____
+                                                    95                  100             104 
+                                     L   S   S   L   T   S   E   D   S   A   V   Y   F   C   A  
+ERR346600.23287_SEQORIENT=F,F_CPRIM ctc agt agc ctg aca tct gag gac tct gct gtc tat ttc tgt gca 
+                                                                             I       Y          
+D14633 Musmus IGHV1-63*02 F         --- --c --- --- --- --- --- --- --- --c a-- --- -a- --- --- 
+
+                                    __________  CDR3 - IMGT  __________
+                                    
+                                     T   W   G   P   Y   Y   F   A   Y   W   G   Q   G   T   T  
+ERR346600.23287_SEQORIENT=F,F_CPRIM act tgg ggt ccg tac tac ttt gcc tac tgg ggc caa ggc acc act 
+                                     R 
+D14633 Musmus IGHV1-63*02 F         -ga
+
+                                    
+                                    
+                                     L   T   V   S   S   A   K   T   T 
+ERR346600.23287_SEQORIENT=F,F_CPRIM ctc aca gtc tcc tca gcc aaa aca aca c
+                                    
+D14633 Musmus IGHV1-63*02 F         
+
+
+8. V-REGION protein display
+                                              FR1-IMGT          CDR1-IMGT       FR2-IMGT     CD
+                                               (1-26)            (27-38)        (39-55)       (
+                                   __________________________ ____________ _________________ __
+                                   1       10        20         30         40        50        
+                                   .........|.........|...... ...|........ .|.........|..... ..
+ERR346600.23287_SEQORIENT=F,F_CPRIMXXXXXXXGA.ELVRPGTSVKISCKAS GYTF....TNYW LGWLKQRPGHGLEWIGD IY
+D14633 Musmus IGHV1-63*02 F        QVQLQQSGA.ELVRPGTSVKMSCKAA GYTF....TNYW IGWVKQRPGHGLEWIGD IY
+                                   XXXXXXX             I    S              L  L                
+
+                                   R2-IMGT                 FR3-IMGT                
+                                   56-65)                  (66-104)                
+                                   ________ _______________________________________
+                                    60         70        80        90        100     
+                                   ..|..... ....|.........|.........|.........|.... 
+ERR346600.23287_SEQORIENT=F,F_CPRIMPG..GVYS NCNEKFK.GKATLTADTSSSSAYMQLSSLTSEDSAVYFC A
+D14633 Musmus IGHV1-63*02 F        PG..GGYT NYNEKFK.GKATLTADTSSSTAYMQLSSLTSEDSAIYYC AR
+                                        V S  C                  S              V F   
+
+
+9. V-REGION mutation and AA change table
+D14633 Musmus IGHV1-63*02;V-REGION;c1>n,Q1>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;a2>n,Q1>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g3>n,Q1>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g4>n,V2>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;t5>n,V2>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;c6>n,V2>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;c7>n,Q3>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;a8>n,Q3>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g9>n,Q3>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;c10>n,L4>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;t11>n,L4>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g12>n,L4>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;c13>n,Q5>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;a14>n,Q5>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g15>n,Q5>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;c16>n,Q6>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;a17>n,Q6>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g18>n,Q6>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;t19>n,S7>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;c20>n,S7>X(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;g63>a,M21>I(+ + -)
+D14633 Musmus IGHV1-63*02;V-REGION;g76>t,A26>S(- + -)
+D14633 Musmus IGHV1-63*02;V-REGION;a81>c
+D14633 Musmus IGHV1-63*02;V-REGION;a115>c,I39>L(+ + +)
+D14633 Musmus IGHV1-63*02;V-REGION;g124>t,V42>L(+ - +)
+D14633 Musmus IGHV1-63*02;V-REGION;c147>a
+D14633 Musmus IGHV1-63*02;V-REGION;g188>t,G63>V(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;a193>t,T65>S(+ - +)
+D14633 Musmus IGHV1-63*02;V-REGION;a200>g,Y67>C(- - -)
+D14633 Musmus IGHV1-63*02;V-REGION;a256>t,T86>S(+ - +)
+D14633 Musmus IGHV1-63*02;V-REGION;a258>t,T86>S(+ - +)
+D14633 Musmus IGHV1-63*02;V-REGION;c276>t
+D14633 Musmus IGHV1-63*02;V-REGION;c300>t
+D14633 Musmus IGHV1-63*02;V-REGION;a301>g,I101>V(+ - +)
+D14633 Musmus IGHV1-63*02;V-REGION;a308>t,Y103>F(- + -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c1>n,Q1>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;a2>n,Q1>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g3>n,Q1>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g4>n,V2>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;t5>n,V2>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c6>n,V2>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c7>n,Q3>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;a8>n,Q3>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g9>n,Q3>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c10>n,L4>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;t11>n,L4>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g12>n,L4>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c13>n,Q5>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;a14>n,Q5>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g15>n,Q5>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c16>n,Q6>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;a17>n,Q6>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g18>n,Q6>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;t19>n,S7>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;c20>n,S7>X(- - -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g63>a,M21>I(+ + -)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;g76>t,A26>S(- + -)
+D14633 Musmus IGHV1-63*02;CDR1-IMGT;a81>c
+D14633 Musmus IGHV1-63*02;FR2-IMGT;a115>c,I39>L(+ + +)
+D14633 Musmus IGHV1-63*02;FR2-IMGT;g124>t,V42>L(+ - +)
+D14633 Musmus IGHV1-63*02;FR2-IMGT;c147>a
+D14633 Musmus IGHV1-63*02;CDR2-IMGT;g188>t,G63>V(- - -)
+D14633 Musmus IGHV1-63*02;CDR2-IMGT;a193>t,T65>S(+ - +)
+D14633 Musmus IGHV1-63*02;FR3-IMGT;a200>g,Y67>C(- - -)
+D14633 Musmus IGHV1-63*02;FR3-IMGT;a256>t,T86>S(+ - +)
+D14633 Musmus IGHV1-63*02;FR3-IMGT;a258>t,T86>S(+ - +)
+D14633 Musmus IGHV1-63*02;FR3-IMGT;c276>t
+D14633 Musmus IGHV1-63*02;FR3-IMGT;c300>t
+D14633 Musmus IGHV1-63*02;FR3-IMGT;a301>g,I101>V(+ - +)
+D14633 Musmus IGHV1-63*02;FR3-IMGT;a308>t,Y103>F(- + -)
+D14633 Musmus IGHV1-63*02;CDR3-IMGT;g317>c,R106>T(- - -)
+D14633 Musmus IGHV1-63*02;CDR3-IMGT;a318>t,R106>T(- - -)
+
+
+10. V-REGION mutation  and AA change statistics
+Nucleotide (nt) mutations
+V-GENE and allele;IMGT Label;Nb of positions including IMGT gaps (nt);Nb of nucleotides;Nb of identical nucleotides;Nb of mutations;silent;nonsilent;a>c;a>t;g>c;g>t;c>a;c>g;t>a;t>g;a>g;g>a;c>t;t>c
+D14633 Musmus IGHV1-63*02;V-REGION;316 (318);292 (294);257;35 (37);4;31 (33);2;4 (5);0 (1);3;1;0;0;0;2;1;2;0 
+D14633 Musmus IGHV1-63*02;FR1-IMGT;78;75;53;22;0;22;0;0;0;1;0;0;0;0;0;1;0;0 
+D14633 Musmus IGHV1-63*02;CDR1-IMGT;36;24;23;1;1;0;1;0;0;0;0;0;0;0;0;0;0;0 
+D14633 Musmus IGHV1-63*02;FR2-IMGT;51;51;48;3;1;2;1;0;0;1;1;0;0;0;0;0;0;0 
+D14633 Musmus IGHV1-63*02;CDR2-IMGT;30;24;22;2;0;2;0;1;0;1;0;0;0;0;0;0;0;0 
+D14633 Musmus IGHV1-63*02;FR3-IMGT;117;114;107;7;2;5;0;3;0;0;0;0;0;0;2;0;2;0 
+D14633 Musmus IGHV1-63*02;CDR3-IMGT;4 (6);4 (6);4;0 (2);0;0 (2);0;0 (1);0 (1);0;0;0;0;0;0;0;0;0 
+
+Amino acid (AA) changes
+V-GENE and allele;IMGT Label;Nb of positions including IMGT gaps (AA);Nb of AA;Nb of identical AA;Nb of AA changes;+++ (Very similar);++- (Similar);+-+ (Similar);+-- (Dissimilar);-+- (Dissimilar);--+ (Dissimilar);--- (Very dissimilar)
+D14633 Musmus IGHV1-63*02;V-REGION;105 (106);97 (98);80;17 (18);1;1;4;0;2;0;9 (10)
+D14633 Musmus IGHV1-63*02;FR1-IMGT;26;25;16;9;0;1;0;0;1;0;7
+D14633 Musmus IGHV1-63*02;CDR1-IMGT;12;8;8;0;0;0;0;0;0;0;0
+D14633 Musmus IGHV1-63*02;FR2-IMGT;17;17;15;2;1;0;1;0;0;0;0
+D14633 Musmus IGHV1-63*02;CDR2-IMGT;10;8;6;2;0;0;1;0;0;0;1
+D14633 Musmus IGHV1-63*02;FR3-IMGT;39;38;34;4;0;0;2;0;1;0;1
+D14633 Musmus IGHV1-63*02;CDR3-IMGT;1 (2);1 (2);1;0 (1);0;0;0;0;0;0;0 (1)
+
+
+Fri Jun 10 18:25:43 CEST 2016

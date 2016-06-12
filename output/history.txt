@@ -1,0 +1,7 @@
+bash ExamplePipeline_Greiff2014_fasta.sh 
+MakeDb.py imgt -i Greiff2014.txz -s /home/ian/NextGenSeq/Greiff2014/output/M1_atleast-2.fasta --regions --scores
+ParseDb.py select -d Greiff2014_db-pass.tab -f FUNCTIONAL -u T
+ParseDb.py fasta -d Greiff2014_db-pass_parse-select.tab --if SEQUENCE_ID --sf SEQUENCE_IMGT --mf V_CALL DUPCOUNT
+DefineClones.py bygroup -d Greiff2014_db-pass_parse-select.tab --act set --model m1n --sym min --norm len --dist 0.25
+CreateGermlines.py -d ./HighVQuestOutput/Greiff2014_db-pass_parse-select_clone-pass.tab -r IMGT_MOUSE_IGH[VDJ].fasta -g dmask --cloned
+

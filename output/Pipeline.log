@@ -1,0 +1,205 @@
+
+       START> AssemblePairs
+     COMMAND> align
+       FILE1> ERR346600_2.fastq
+       FILE2> ERR346600_1.fastq
+  COORD_TYPE> sra
+       ALPHA> 1e-05
+   MAX_ERROR> 0.3
+     MIN_LEN> 8
+     MAX_LEN> 1000
+SCAN_REVERSE> False
+       NPROC> 4
+
+PROGRESS> 11:06:36 [                    ]   0% (     0) 0.0 minPROGRESS> 11:06:43 [#                   ]   5% ( 1,250) 0.1 minPROGRESS> 11:06:50 [##                  ]  10% ( 2,500) 0.2 minPROGRESS> 11:06:57 [###                 ]  15% ( 3,750) 0.3 minPROGRESS> 11:07:04 [####                ]  20% ( 5,000) 0.5 minPROGRESS> 11:07:12 [#####               ]  25% ( 6,250) 0.6 minPROGRESS> 11:07:19 [######              ]  30% ( 7,500) 0.7 minPROGRESS> 11:07:27 [#######             ]  35% ( 8,750) 0.8 minPROGRESS> 11:07:34 [########            ]  40% (10,000) 1.0 minPROGRESS> 11:07:42 [#########           ]  45% (11,250) 1.1 minPROGRESS> 11:07:48 [##########          ]  50% (12,500) 1.2 minPROGRESS> 11:07:55 [###########         ]  55% (13,750) 1.3 minPROGRESS> 11:08:03 [############        ]  60% (15,000) 1.5 minPROGRESS> 11:08:11 [#############       ]  65% (16,250) 1.6 minPROGRESS> 11:08:18 [##############      ]  70% (17,500) 1.7 minPROGRESS> 11:08:25 [###############     ]  75% (18,750) 1.8 minPROGRESS> 11:08:32 [################    ]  80% (20,000) 1.9 minPROGRESS> 11:08:39 [#################   ]  85% (21,250) 2.0 minPROGRESS> 11:08:46 [##################  ]  90% (22,500) 2.2 minPROGRESS> 11:08:53 [################### ]  95% (23,750) 2.3 minPROGRESS> 11:09:00 [####################] 100% (25,000) 2.4 min
+
+OUTPUT> M1_assemble-pass.fastq
+ PAIRS> 25000
+  PASS> 24363
+  FAIL> 637
+   END> AssemblePairs
+
+   START> FilterSeq
+ COMMAND> quality
+    FILE> M1_assemble-pass.fastq
+   INNER> False
+MIN_QUAL> 20.0
+   NPROC> 4
+
+PROGRESS> 11:09:00 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:01 [#                   ]   5% ( 1,219) 0.0 minPROGRESS> 11:09:01 [##                  ]  10% ( 2,438) 0.0 minPROGRESS> 11:09:01 [###                 ]  15% ( 3,657) 0.0 minPROGRESS> 11:09:02 [####                ]  20% ( 4,876) 0.0 minPROGRESS> 11:09:02 [#####               ]  25% ( 6,095) 0.0 minPROGRESS> 11:09:03 [######              ]  30% ( 7,314) 0.0 minPROGRESS> 11:09:03 [#######             ]  35% ( 8,533) 0.0 minPROGRESS> 11:09:03 [########            ]  40% ( 9,752) 0.1 minPROGRESS> 11:09:04 [#########           ]  45% (10,971) 0.1 minPROGRESS> 11:09:04 [##########          ]  50% (12,190) 0.1 minPROGRESS> 11:09:04 [###########         ]  55% (13,409) 0.1 minPROGRESS> 11:09:05 [############        ]  60% (14,628) 0.1 minPROGRESS> 11:09:05 [#############       ]  65% (15,847) 0.1 minPROGRESS> 11:09:06 [##############      ]  70% (17,066) 0.1 minPROGRESS> 11:09:06 [###############     ]  75% (18,285) 0.1 minPROGRESS> 11:09:06 [################    ]  80% (19,504) 0.1 minPROGRESS> 11:09:07 [#################   ]  85% (20,723) 0.1 minPROGRESS> 11:09:07 [##################  ]  90% (21,942) 0.1 minPROGRESS> 11:09:08 [################### ]  95% (23,161) 0.1 minPROGRESS> 11:09:08 [####################] 100% (24,363) 0.1 min
+
+   OUTPUT> M1_quality-pass.fastq
+SEQUENCES> 24363
+     PASS> 24361
+     FAIL> 2
+      END> FilterSeq
+
+      START> MaskPrimers
+    COMMAND> score
+   SEQ_FILE> M1_quality-pass.fastq
+PRIMER_FILE> Greiff2014_VPrimers.fasta
+       MODE> mask
+    BARCODE> False
+  MAX_ERROR> 0.2
+  START_POS> 4
+ REV_PRIMER> False
+      NPROC> 4
+
+PROGRESS> 11:09:08 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:09 [#                   ]   5% ( 1,219) 0.0 minPROGRESS> 11:09:10 [##                  ]  10% ( 2,438) 0.0 minPROGRESS> 11:09:11 [###                 ]  15% ( 3,657) 0.0 minPROGRESS> 11:09:12 [####                ]  20% ( 4,876) 0.1 minPROGRESS> 11:09:12 [#####               ]  25% ( 6,095) 0.1 minPROGRESS> 11:09:13 [######              ]  30% ( 7,314) 0.1 minPROGRESS> 11:09:14 [#######             ]  35% ( 8,533) 0.1 minPROGRESS> 11:09:15 [########            ]  40% ( 9,752) 0.1 minPROGRESS> 11:09:15 [#########           ]  45% (10,971) 0.1 minPROGRESS> 11:09:16 [##########          ]  50% (12,190) 0.1 minPROGRESS> 11:09:17 [###########         ]  55% (13,409) 0.1 minPROGRESS> 11:09:18 [############        ]  60% (14,628) 0.2 minPROGRESS> 11:09:18 [#############       ]  65% (15,847) 0.2 minPROGRESS> 11:09:19 [##############      ]  70% (17,066) 0.2 minPROGRESS> 11:09:20 [###############     ]  75% (18,285) 0.2 minPROGRESS> 11:09:21 [################    ]  80% (19,504) 0.2 minPROGRESS> 11:09:22 [#################   ]  85% (20,723) 0.2 minPROGRESS> 11:09:22 [##################  ]  90% (21,942) 0.2 minPROGRESS> 11:09:23 [################### ]  95% (23,161) 0.2 minPROGRESS> 11:09:24 [####################] 100% (24,361) 0.3 min
+
+   OUTPUT> M1-FWD_primers-pass.fastq
+SEQUENCES> 24361
+     PASS> 23968
+     FAIL> 393
+      END> MaskPrimers
+
+      START> MaskPrimers
+    COMMAND> score
+   SEQ_FILE> M1-FWD_primers-pass.fastq
+PRIMER_FILE> Greiff2014_CPrimers.fasta
+       MODE> cut
+    BARCODE> False
+  MAX_ERROR> 0.2
+  START_POS> 4
+ REV_PRIMER> True
+      NPROC> 4
+
+PROGRESS> 11:09:24 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:24 [#                   ]   5% ( 1,199) 0.0 minPROGRESS> 11:09:25 [##                  ]  10% ( 2,398) 0.0 minPROGRESS> 11:09:25 [###                 ]  15% ( 3,597) 0.0 minPROGRESS> 11:09:26 [####                ]  20% ( 4,796) 0.0 minPROGRESS> 11:09:26 [#####               ]  25% ( 5,995) 0.0 minPROGRESS> 11:09:27 [######              ]  30% ( 7,194) 0.0 minPROGRESS> 11:09:27 [#######             ]  35% ( 8,393) 0.1 minPROGRESS> 11:09:28 [########            ]  40% ( 9,592) 0.1 minPROGRESS> 11:09:28 [#########           ]  45% (10,791) 0.1 minPROGRESS> 11:09:28 [##########          ]  50% (11,990) 0.1 minPROGRESS> 11:09:29 [###########         ]  55% (13,189) 0.1 minPROGRESS> 11:09:29 [############        ]  60% (14,388) 0.1 minPROGRESS> 11:09:30 [#############       ]  65% (15,587) 0.1 minPROGRESS> 11:09:30 [##############      ]  70% (16,786) 0.1 minPROGRESS> 11:09:31 [###############     ]  75% (17,985) 0.1 minPROGRESS> 11:09:31 [################    ]  80% (19,184) 0.1 minPROGRESS> 11:09:32 [#################   ]  85% (20,383) 0.1 minPROGRESS> 11:09:32 [##################  ]  90% (21,582) 0.1 minPROGRESS> 11:09:32 [################### ]  95% (22,781) 0.1 minPROGRESS> 11:09:33 [####################] 100% (23,968) 0.1 min
+
+   OUTPUT> M1-REV_primers-pass.fastq
+SEQUENCES> 23968
+     PASS> 23573
+     FAIL> 395
+      END> MaskPrimers
+
+  START> ParseHeaders
+COMMAND> expand
+   FILE> M1-REV_primers-pass.fastq
+ FIELDS> PRIMER
+
+PROGRESS> 11:09:33 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:33 [#                   ]   5% ( 1,179) 0.0 minPROGRESS> 11:09:33 [##                  ]  10% ( 2,358) 0.0 minPROGRESS> 11:09:33 [###                 ]  15% ( 3,537) 0.0 minPROGRESS> 11:09:33 [####                ]  20% ( 4,716) 0.0 minPROGRESS> 11:09:34 [#####               ]  25% ( 5,895) 0.0 minPROGRESS> 11:09:34 [######              ]  30% ( 7,074) 0.0 minPROGRESS> 11:09:34 [#######             ]  35% ( 8,253) 0.0 minPROGRESS> 11:09:34 [########            ]  40% ( 9,432) 0.0 minPROGRESS> 11:09:34 [#########           ]  45% (10,611) 0.0 minPROGRESS> 11:09:34 [##########          ]  50% (11,790) 0.0 minPROGRESS> 11:09:34 [###########         ]  55% (12,969) 0.0 minPROGRESS> 11:09:34 [############        ]  60% (14,148) 0.0 minPROGRESS> 11:09:34 [#############       ]  65% (15,327) 0.0 minPROGRESS> 11:09:34 [##############      ]  70% (16,506) 0.0 minPROGRESS> 11:09:35 [###############     ]  75% (17,685) 0.0 minPROGRESS> 11:09:35 [################    ]  80% (18,864) 0.0 minPROGRESS> 11:09:35 [#################   ]  85% (20,043) 0.0 minPROGRESS> 11:09:35 [##################  ]  90% (21,222) 0.0 minPROGRESS> 11:09:35 [################### ]  95% (22,401) 0.0 minPROGRESS> 11:09:35 [####################] 100% (23,573) 0.0 min
+
+   OUTPUT> M1-REV_primers-pass_reheader.fasta
+SEQUENCES> 23573
+      END> ParseHeaders
+
+  START> ParseHeaders
+COMMAND> rename
+   FILE> M1-REV_primers-pass_reheader.fasta
+ACTIONS> None
+ FIELDS> PRIMER1,PRIMER2
+  NAMES> VPRIMER,CPRIMER
+
+PROGRESS> 11:09:35 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:35 [#                   ]   5% ( 1,179) 0.0 minPROGRESS> 11:09:36 [##                  ]  10% ( 2,358) 0.0 minPROGRESS> 11:09:36 [###                 ]  15% ( 3,537) 0.0 minPROGRESS> 11:09:36 [####                ]  20% ( 4,716) 0.0 minPROGRESS> 11:09:36 [#####               ]  25% ( 5,895) 0.0 minPROGRESS> 11:09:36 [######              ]  30% ( 7,074) 0.0 minPROGRESS> 11:09:36 [#######             ]  35% ( 8,253) 0.0 minPROGRESS> 11:09:36 [########            ]  40% ( 9,432) 0.0 minPROGRESS> 11:09:36 [#########           ]  45% (10,611) 0.0 minPROGRESS> 11:09:36 [##########          ]  50% (11,790) 0.0 minPROGRESS> 11:09:36 [###########         ]  55% (12,969) 0.0 minPROGRESS> 11:09:36 [############        ]  60% (14,148) 0.0 minPROGRESS> 11:09:36 [#############       ]  65% (15,327) 0.0 minPROGRESS> 11:09:36 [##############      ]  70% (16,506) 0.0 minPROGRESS> 11:09:36 [###############     ]  75% (17,685) 0.0 minPROGRESS> 11:09:36 [################    ]  80% (18,864) 0.0 minPROGRESS> 11:09:36 [#################   ]  85% (20,043) 0.0 minPROGRESS> 11:09:36 [##################  ]  90% (21,222) 0.0 minPROGRESS> 11:09:37 [################### ]  95% (22,401) 0.0 minPROGRESS> 11:09:37 [####################] 100% (23,573) 0.0 min
+
+   OUTPUT> M1_reheader.fasta
+SEQUENCES> 23573
+      END> ParseHeaders
+
+       START> CollapseSeq
+        FILE> M1_reheader.fasta
+ MAX_MISSING> 20
+ UNIQ_FIELDS> CPRIMER
+ COPY_FIELDS> VPRIMER
+COPY_ACTIONS> set
+   MAX_FIELD> None
+   MIN_FIELD> None
+       INNER> True
+KEEP_MISSING> False
+
+MISSING>  0
+PROGRESS> 11:09:37 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:37 [#                   ]   5% ( 1,179) 0.0 minPROGRESS> 11:09:37 [##                  ]  10% ( 2,358) 0.0 minPROGRESS> 11:09:37 [###                 ]  15% ( 3,537) 0.0 minPROGRESS> 11:09:37 [####                ]  20% ( 4,716) 0.0 minPROGRESS> 11:09:37 [#####               ]  25% ( 5,895) 0.0 minPROGRESS> 11:09:37 [######              ]  30% ( 7,074) 0.0 minPROGRESS> 11:09:37 [#######             ]  35% ( 8,253) 0.0 minPROGRESS> 11:09:37 [########            ]  40% ( 9,432) 0.0 minPROGRESS> 11:09:37 [#########           ]  45% (10,611) 0.0 minPROGRESS> 11:09:37 [##########          ]  50% (11,790) 0.0 minPROGRESS> 11:09:37 [###########         ]  55% (12,969) 0.0 minPROGRESS> 11:09:37 [############        ]  60% (14,148) 0.0 minPROGRESS> 11:09:37 [#############       ]  65% (15,327) 0.0 minPROGRESS> 11:09:37 [##############      ]  70% (16,506) 0.0 minPROGRESS> 11:09:37 [###############     ]  75% (17,685) 0.0 minPROGRESS> 11:09:37 [################    ]  80% (18,864) 0.0 minPROGRESS> 11:09:37 [#################   ]  85% (20,043) 0.0 minPROGRESS> 11:09:37 [##################  ]  90% (21,222) 0.0 minPROGRESS> 11:09:37 [################### ]  95% (22,401) 0.0 minPROGRESS> 11:09:37 [####################] 100% (23,573) 0.0 min
+
+MISSING>  1
+PROGRESS> 11:09:37 [                    ]   0% ( 0) 0.0 minPROGRESS> 11:09:37 [#                   ]   8% ( 1) 0.0 minPROGRESS> 11:09:37 [###                 ]  17% ( 2) 0.0 minPROGRESS> 11:09:37 [#####               ]  25% ( 3) 0.0 minPROGRESS> 11:09:37 [######              ]  33% ( 4) 0.0 minPROGRESS> 11:09:37 [########            ]  42% ( 5) 0.0 minPROGRESS> 11:09:37 [##########          ]  50% ( 6) 0.0 minPROGRESS> 11:09:37 [###########         ]  58% ( 7) 0.0 minPROGRESS> 11:09:37 [#############       ]  67% ( 8) 0.0 minPROGRESS> 11:09:37 [###############     ]  75% ( 9) 0.0 minPROGRESS> 11:09:37 [################    ]  83% (10) 0.0 minPROGRESS> 11:09:37 [##################  ]  92% (11) 0.0 minPROGRESS> 11:09:37 [####################] 100% (12) 0.0 min
+
+MISSING>  2
+PROGRESS> 11:09:37 [                    ]   0% ( 0) 0.0 minPROGRESS> 11:09:37 [#                   ]   9% ( 1) 0.0 minPROGRESS> 11:09:37 [###                 ]  18% ( 2) 0.0 minPROGRESS> 11:09:37 [#####               ]  27% ( 3) 0.0 minPROGRESS> 11:09:37 [#######             ]  36% ( 4) 0.0 minPROGRESS> 11:09:37 [#########           ]  45% ( 5) 0.0 minPROGRESS> 11:09:37 [##########          ]  55% ( 6) 0.0 minPROGRESS> 11:09:37 [############        ]  64% ( 7) 0.0 minPROGRESS> 11:09:37 [##############      ]  73% ( 8) 0.0 minPROGRESS> 11:09:38 [################    ]  82% ( 9) 0.0 minPROGRESS> 11:09:38 [##################  ]  91% (10) 0.0 minPROGRESS> 11:09:38 [####################] 100% (11) 0.0 min
+
+MISSING>  3
+PROGRESS> 11:09:38 [                    ]   0% ( 0) 0.0 minPROGRESS> 11:09:38 [##                  ]  10% ( 1) 0.0 minPROGRESS> 11:09:38 [####                ]  20% ( 2) 0.0 minPROGRESS> 11:09:38 [######              ]  30% ( 3) 0.0 minPROGRESS> 11:09:38 [########            ]  40% ( 4) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% ( 5) 0.0 minPROGRESS> 11:09:38 [############        ]  60% ( 6) 0.0 minPROGRESS> 11:09:38 [##############      ]  70% ( 7) 0.0 minPROGRESS> 11:09:38 [################    ]  80% ( 8) 0.0 minPROGRESS> 11:09:38 [##################  ]  90% ( 9) 0.0 minPROGRESS> 11:09:38 [####################] 100% (10) 0.0 min
+
+MISSING>  4
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [##                  ]  11% (1) 0.0 minPROGRESS> 11:09:38 [####                ]  22% (2) 0.0 minPROGRESS> 11:09:38 [######              ]  33% (3) 0.0 minPROGRESS> 11:09:38 [########            ]  44% (4) 0.0 minPROGRESS> 11:09:38 [###########         ]  56% (5) 0.0 minPROGRESS> 11:09:38 [#############       ]  67% (6) 0.0 minPROGRESS> 11:09:38 [###############     ]  78% (7) 0.0 minPROGRESS> 11:09:38 [#################   ]  89% (8) 0.0 minPROGRESS> 11:09:38 [####################] 100% (9) 0.0 min
+
+MISSING>  5
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [##                  ]  11% (1) 0.0 minPROGRESS> 11:09:38 [####                ]  22% (2) 0.0 minPROGRESS> 11:09:38 [######              ]  33% (3) 0.0 minPROGRESS> 11:09:38 [########            ]  44% (4) 0.0 minPROGRESS> 11:09:38 [###########         ]  56% (5) 0.0 minPROGRESS> 11:09:38 [#############       ]  67% (6) 0.0 minPROGRESS> 11:09:38 [###############     ]  78% (7) 0.0 minPROGRESS> 11:09:38 [#################   ]  89% (8) 0.0 minPROGRESS> 11:09:38 [####################] 100% (9) 0.0 min
+
+MISSING>  6
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [##                  ]  12% (1) 0.0 minPROGRESS> 11:09:38 [#####               ]  25% (2) 0.0 minPROGRESS> 11:09:38 [#######             ]  38% (3) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% (4) 0.0 minPROGRESS> 11:09:38 [############        ]  62% (5) 0.0 minPROGRESS> 11:09:38 [###############     ]  75% (6) 0.0 minPROGRESS> 11:09:38 [#################   ]  88% (7) 0.0 minPROGRESS> 11:09:38 [####################] 100% (8) 0.0 min
+
+MISSING>  7
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  8
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  9
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  10
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  11
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  12
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  13
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####                ]  20% (1) 0.0 minPROGRESS> 11:09:38 [########            ]  40% (2) 0.0 minPROGRESS> 11:09:38 [############        ]  60% (3) 0.0 minPROGRESS> 11:09:38 [################    ]  80% (4) 0.0 minPROGRESS> 11:09:38 [####################] 100% (5) 0.0 min
+
+MISSING>  14
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [#####               ]  25% (1) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% (2) 0.0 minPROGRESS> 11:09:38 [###############     ]  75% (3) 0.0 minPROGRESS> 11:09:38 [####################] 100% (4) 0.0 min
+
+MISSING>  15
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [#####               ]  25% (1) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% (2) 0.0 minPROGRESS> 11:09:38 [###############     ]  75% (3) 0.0 minPROGRESS> 11:09:38 [####################] 100% (4) 0.0 min
+
+MISSING>  16
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [#####               ]  25% (1) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% (2) 0.0 minPROGRESS> 11:09:38 [###############     ]  75% (3) 0.0 minPROGRESS> 11:09:38 [####################] 100% (4) 0.0 min
+
+MISSING>  17
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [#####               ]  25% (1) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% (2) 0.0 minPROGRESS> 11:09:38 [###############     ]  75% (3) 0.0 minPROGRESS> 11:09:38 [####################] 100% (4) 0.0 min
+
+MISSING>  18
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [######              ]  33% (1) 0.0 minPROGRESS> 11:09:38 [#############       ]  67% (2) 0.0 minPROGRESS> 11:09:38 [####################] 100% (3) 0.0 min
+
+MISSING>  19
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [##########          ]  50% (1) 0.0 minPROGRESS> 11:09:38 [####################] 100% (2) 0.0 min
+
+MISSING>  20
+PROGRESS> 11:09:38 [                    ]   0% (0) 0.0 minPROGRESS> 11:09:38 [####################] 100% (1) 0.0 min
+
+      OUTPUT> M1_collapse-unique.fasta
+   SEQUENCES> 23573
+      UNIQUE> 13079
+   DUPLICATE> 10493
+UNDETERMINED> 1
+         END> CollapseSeq
+
+    START> SplitSeq
+  COMMAND> group
+     FILE> M1_collapse-unique.fasta
+    FIELD> DUPCOUNT
+THRESHOLD> 2.0
+
+PROGRESS> 11:09:38 [                    ]   0% (     0) 0.0 minPROGRESS> 11:09:38 [#                   ]   5% (   654) 0.0 minPROGRESS> 11:09:39 [##                  ]  10% ( 1,308) 0.0 minPROGRESS> 11:09:39 [###                 ]  15% ( 1,962) 0.0 minPROGRESS> 11:09:39 [####                ]  20% ( 2,616) 0.0 minPROGRESS> 11:09:39 [#####               ]  25% ( 3,270) 0.0 minPROGRESS> 11:09:39 [######              ]  30% ( 3,924) 0.0 minPROGRESS> 11:09:39 [#######             ]  35% ( 4,578) 0.0 minPROGRESS> 11:09:39 [########            ]  40% ( 5,232) 0.0 minPROGRESS> 11:09:39 [#########           ]  45% ( 5,886) 0.0 minPROGRESS> 11:09:39 [##########          ]  50% ( 6,540) 0.0 minPROGRESS> 11:09:39 [###########         ]  55% ( 7,194) 0.0 minPROGRESS> 11:09:39 [############        ]  60% ( 7,848) 0.0 minPROGRESS> 11:09:39 [#############       ]  65% ( 8,502) 0.0 minPROGRESS> 11:09:39 [##############      ]  70% ( 9,156) 0.0 minPROGRESS> 11:09:39 [###############     ]  75% ( 9,810) 0.0 minPROGRESS> 11:09:39 [################    ]  80% (10,464) 0.0 minPROGRESS> 11:09:39 [#################   ]  85% (11,118) 0.0 minPROGRESS> 11:09:39 [##################  ]  90% (11,772) 0.0 minPROGRESS> 11:09:39 [################### ]  95% (12,426) 0.0 minPROGRESS> 11:09:39 [####################] 100% (13,079) 0.0 min
+
+  OUTPUT1> M1_under-2.fasta
+  OUTPUT2> M1_atleast-2.fasta
+SEQUENCES> 13079
+    PARTS> 2
+      END> SplitSeq
+
+  START> ParseHeaders
+COMMAND> table
+   FILE> M1_atleast-2.fasta
+
+PROGRESS> 11:09:39 [                    ]   0% (    0) 0.0 minPROGRESS> 11:09:39 [#                   ]   5% (   53) 0.0 minPROGRESS> 11:09:39 [##                  ]  10% (  106) 0.0 minPROGRESS> 11:09:39 [###                 ]  15% (  159) 0.0 minPROGRESS> 11:09:39 [####                ]  20% (  212) 0.0 minPROGRESS> 11:09:39 [#####               ]  25% (  265) 0.0 minPROGRESS> 11:09:39 [######              ]  30% (  318) 0.0 minPROGRESS> 11:09:39 [#######             ]  36% (  371) 0.0 minPROGRESS> 11:09:39 [########            ]  41% (  424) 0.0 minPROGRESS> 11:09:39 [#########           ]  46% (  477) 0.0 minPROGRESS> 11:09:39 [##########          ]  51% (  530) 0.0 minPROGRESS> 11:09:39 [###########         ]  56% (  583) 0.0 minPROGRESS> 11:09:39 [############        ]  61% (  636) 0.0 minPROGRESS> 11:09:39 [#############       ]  66% (  689) 0.0 minPROGRESS> 11:09:39 [##############      ]  71% (  742) 0.0 minPROGRESS> 11:09:39 [###############     ]  76% (  795) 0.0 minPROGRESS> 11:09:39 [################    ]  81% (  848) 0.0 minPROGRESS> 11:09:39 [#################   ]  86% (  901) 0.0 minPROGRESS> 11:09:39 [##################  ]  91% (  954) 0.0 minPROGRESS> 11:09:39 [################### ]  96% (1,007) 0.0 minPROGRESS> 11:09:39 [####################] 100% (1,045) 0.0 min
+
+   OUTPUT> M1_atleast-2_headers.tab
+SEQUENCES> 1045
+     PASS> 1045
+     FAIL> 0
+      END> ParseHeaders
+
